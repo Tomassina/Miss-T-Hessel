@@ -2,12 +2,12 @@
    CSS Custom Properties
    ============================================================ */
 :root {
-  --plum-darkest:  #3A0D2E;
-  --plum-dark:     #5C1848;
-  --plum:          #7B2D6A;
-  --plum-mid:      #9B5A88;
-  --plum-light:    #DDB8CF;
-  --plum-pale:     #F5EAF1;
+  --plum-darkest:  #5C0344;
+  --plum-dark:     #7f055f;
+  --plum:          #9B1878;
+  --plum-mid:      #B34E92;
+  --plum-light:    #E0B0D2;
+  --plum-pale:     #F7EAF3;
 
   --gold:          #C4973A;
   --gold-light:    #E8C55E;
@@ -17,9 +17,9 @@
   --beige:         #F5E9D0;
   --white:         #FFFDF8;
 
-  --text-heading:  #5C1848;
-  --text-body:     #6B2062;
-  --text-muted:    #9B5A88;
+  --text-heading:  #7f055f;
+  --text-body:     #7f055f;
+  --text-muted:    #B34E92;
 
   --font-serif:    'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans:     'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
