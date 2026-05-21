@@ -21,8 +21,8 @@
   --text-body:     #7f055f;
   --text-muted:    #B34E92;
 
-  --font-serif:    'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-sans:     'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif:    'Cormorant Garamond', Georgia, serif;
+  --font-sans:     'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --space-xs:  0.5rem;
   --space-sm:  1rem;
@@ -86,8 +86,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
   color: var(--text-heading);
-  line-height: 1.25;
-  font-weight: 600;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 p { max-width: 65ch; }
@@ -109,14 +110,14 @@ p { max-width: 65ch; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.65rem 1.6rem;
   font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   border-radius: var(--radius-full);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: var(--transition);
   cursor: pointer;
   white-space: nowrap;
@@ -131,20 +132,20 @@ p { max-width: 65ch; }
 .btn-primary:focus-visible {
   background: var(--plum);
   border-color: var(--plum);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(127, 5, 95, 0.18);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--plum-dark);
-  border-color: var(--plum-dark);
+  border-color: rgba(127, 5, 95, 0.4);
 }
 .btn-outline:hover,
 .btn-outline:focus-visible {
   background: var(--plum-pale);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
+  border-color: var(--plum-dark);
+  transform: translateY(-1px);
 }
 
 .btn-icon {
@@ -461,22 +462,22 @@ p { max-width: 65ch; }
 
 /* Card */
 .nav-card {
-  background: rgba(255, 253, 248, 0.78);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(196, 151, 58, 0.22);
+  background: rgba(255, 253, 248, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196, 151, 58, 0.15);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 6px rgba(127, 5, 95, 0.04);
 }
 .nav-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(127, 5, 95, 0.08);
+  border-color: rgba(196, 151, 58, 0.35);
 }
 .nav-card--soon { opacity: 0.92; }
 
@@ -544,15 +545,12 @@ p { max-width: 65ch; }
 /* Coming-soon badge */
 .coming-soon-badge {
   display: inline-block;
-  padding: 0.3rem 0.9rem;
-  background: var(--gold-pale);
   color: var(--gold);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(196, 151, 58, 0.3);
+  font-style: italic;
   align-self: flex-start;
 }
 
