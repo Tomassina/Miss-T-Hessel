@@ -156,13 +156,14 @@ p { max-width: 65ch; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--header-height);
+  background: rgba(255, 253, 248, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transition: background var(--transition), box-shadow var(--transition);
 }
 
 .site-header.is-scrolled {
-  background: rgba(255, 253, 248, 0.95);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 253, 248, 0.82);
   box-shadow: var(--shadow-sm);
 }
 
@@ -561,10 +562,11 @@ p { max-width: 65ch; }
    Footer
    ============================================================ */
 .site-footer {
-  background: rgba(58, 13, 46, 0.92);
+  background: rgba(255, 253, 248, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  color: rgba(255, 253, 248, 0.82);
+  border-top: 1px solid rgba(196, 151, 58, 0.3);
+  color: var(--text-body);
   padding: var(--space-xl) 0 var(--space-md);
   margin-top: var(--space-xl);
 }
@@ -575,21 +577,21 @@ p { max-width: 65ch; }
   gap: var(--space-lg);
   align-items: start;
   padding-bottom: var(--space-lg);
-  border-bottom: 1px solid rgba(255, 253, 248, 0.12);
+  border-bottom: 1px solid rgba(196, 151, 58, 0.2);
 }
 
 .footer-name {
   font-family: var(--font-serif);
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--plum-dark);
   max-width: none;
 }
 .footer-tagline {
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 253, 248, 0.48);
+  color: var(--plum-mid);
   margin-top: 0.3rem;
   max-width: none;
 }
@@ -602,10 +604,10 @@ p { max-width: 65ch; }
 .footer-nav a {
   font-size: 0.85rem;
   font-weight: 500;
-  color: rgba(255, 253, 248, 0.68);
+  color: var(--plum-mid);
   transition: color var(--transition);
 }
-.footer-nav a:hover { color: var(--gold-light); }
+.footer-nav a:hover { color: var(--plum-dark); }
 
 .footer-social { display: flex; flex-direction: column; gap: 0.6rem; }
 .social-link {
@@ -614,10 +616,10 @@ p { max-width: 65ch; }
   gap: 0.5rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: rgba(255, 253, 248, 0.68);
+  color: var(--plum-mid);
   transition: color var(--transition);
 }
-.social-link:hover { color: var(--gold-light); }
+.social-link:hover { color: var(--plum-dark); }
 .social-link svg { width: 18px; height: 18px; flex-shrink: 0; }
 
 .footer-bottom {
@@ -626,7 +628,7 @@ p { max-width: 65ch; }
 }
 .footer-bottom p {
   font-size: 0.75rem;
-  color: rgba(255, 253, 248, 0.35);
+  color: var(--plum-mid);
   max-width: none;
   margin: 0 auto;
 }
