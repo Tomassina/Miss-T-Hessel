@@ -26,7 +26,6 @@
 
         <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html"        class="nav-link active">Home</a></li>
             <li><a href="about.html"        class="nav-link">About Me</a></li>
             <li><a href="work-with-me.html" class="nav-link">Work with Me</a></li>
             <li><a href="explore.html"      class="nav-link">Explore My World</a></li>
@@ -49,78 +48,50 @@
   <main>
 
     <!-- ── Welcome Section ─────────────────────── -->
-    <section class="welcome-section" aria-labelledby="welcome-heading">
+    <section class="welcome-section">
       <div class="container">
-        <div class="welcome-grid">
+        <div class="video-block">
 
-          <!-- Text column -->
-          <div class="welcome-text">
-            <p class="welcome-eyebrow">Welcome</p>
-            <h1 id="welcome-heading" class="welcome-heading">I'm Miss T. Hessel</h1>
-            <p class="welcome-intro">
-              Systems thinker. Community builder. Lifelong learner.
-            </p>
-            <p class="welcome-body">
-              This is my personal space — a place where my professional journey,
-              passions, and projects come together. I've spent years working across
-              administration, community development, and now technology, and I'm
-              someone who genuinely believes that how we connect, organise, and
-              care for each other is the most important system of all.
-            </p>
-            <p class="welcome-body">
-              Whether you're here to connect, collaborate, or simply explore —
-              I'm glad you found your way here. Watch my welcome video below,
-              then choose where you'd like to go.
-            </p>
-          </div>
-
-          <!-- Video column -->
-          <div class="video-block">
-
-            <div class="video-container" id="video-container">
-              <div class="video-placeholder" id="video-placeholder"
-                   role="img" aria-label="Welcome video — coming soon">
-                <div class="video-bg-text" aria-hidden="true">Miss T. Hessel</div>
-                <button class="play-btn" id="play-btn" aria-label="Play welcome video">
-                  <span class="play-triangle" aria-hidden="true"></span>
-                </button>
-                <p class="video-label" id="video-label">Welcome Video &middot; Coming Soon</p>
-              </div>
-            </div>
-
-            <div class="transcript-controls">
-              <button class="btn btn-outline transcript-btn"
-                      id="transcript-toggle"
-                      aria-expanded="false"
-                      aria-controls="transcript-panel">
-                <!-- Document / transcript icon -->
-                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
-                <span class="transcript-btn-label">View Transcript</span>
+          <div class="video-container" id="video-container">
+            <div class="video-placeholder" id="video-placeholder"
+                 role="img" aria-label="Welcome video — coming soon">
+              <div class="video-bg-text" aria-hidden="true">Miss T. Hessel</div>
+              <button class="play-btn" id="play-btn" aria-label="Play welcome video">
+                <span class="play-triangle" aria-hidden="true"></span>
               </button>
+              <p class="video-label" id="video-label">Welcome Video &middot; Coming Soon</p>
             </div>
-
-            <div class="transcript-panel" id="transcript-panel" aria-hidden="true">
-              <div class="transcript-inner">
-                <h3>Video Transcript</h3>
-                <p class="transcript-placeholder">
-                  The transcript for this welcome video will appear here once the
-                  video has been recorded. It will provide a full written version
-                  of the content for accessibility and for those who prefer to read.
-                </p>
-              </div>
-            </div>
-
           </div>
-          <!-- /video-block -->
+
+          <div class="transcript-controls">
+            <button class="btn btn-outline transcript-btn"
+                    id="transcript-toggle"
+                    aria-expanded="false"
+                    aria-controls="transcript-panel">
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <span class="transcript-btn-label">View Transcript</span>
+            </button>
+          </div>
+
+          <div class="transcript-panel" id="transcript-panel" aria-hidden="true">
+            <div class="transcript-inner">
+              <h3>Video Transcript</h3>
+              <p class="transcript-placeholder">
+                The transcript for this welcome video will appear here once the
+                video has been recorded. It will provide a full written version
+                of the content for accessibility and for those who prefer to read.
+              </p>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -139,8 +110,7 @@
 
         <div class="cards-grid">
 
-          <!-- Card 1 — About Me -->
-          <article class="nav-card" aria-labelledby="card-about-title">
+          <article class="nav-card">
             <div class="card-icon-wrap" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor"
@@ -149,22 +119,11 @@
                 <circle cx="12" cy="7" r="4"/>
               </svg>
             </div>
-            <h3 id="card-about-title" class="card-title">About Me</h3>
-            <p class="card-desc">
-              Get to know the journey — where I've come from, where I am now,
-              and the vision I'm building toward. This is the story behind the
-              person.
-            </p>
-            <ul class="card-subnav" aria-label="About Me sections">
-              <li><a href="about.html#done">What I've Done</a></li>
-              <li><a href="about.html#doing">What I'm Doing</a></li>
-              <li><a href="about.html#planned">What I Have Planned</a></li>
-            </ul>
-            <a href="about.html" class="btn btn-primary card-cta">Explore</a>
+            <h3 class="card-title">About Me</h3>
+            <a href="about.html" class="btn btn-primary card-cta">Enter</a>
           </article>
 
-          <!-- Card 2 — Work with Me -->
-          <article class="nav-card" aria-labelledby="card-work-title">
+          <article class="nav-card">
             <div class="card-icon-wrap" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor"
@@ -173,21 +132,11 @@
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
               </svg>
             </div>
-            <h3 id="card-work-title" class="card-title">Work with Me</h3>
-            <p class="card-desc">
-              From professional credentials to services and creative projects —
-              find out how we might collaborate, or what I have in the pipeline.
-            </p>
-            <ul class="card-subnav" aria-label="Work with Me sections">
-              <li><a href="work-with-me.html#cv-library">CV Library &amp; LinkedIn</a></li>
-              <li><a href="work-with-me.html#services">Services</a></li>
-              <li><a href="about.html#planned">Future Music</a></li>
-            </ul>
-            <a href="work-with-me.html" class="btn btn-primary card-cta">Connect</a>
+            <h3 class="card-title">Work with Me</h3>
+            <a href="work-with-me.html" class="btn btn-primary card-cta">Enter</a>
           </article>
 
-          <!-- Card 3 — Explore My World -->
-          <article class="nav-card nav-card--soon" aria-labelledby="card-explore-title">
+          <article class="nav-card">
             <div class="card-icon-wrap" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor"
@@ -198,13 +147,8 @@
                          15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
             </div>
-            <h3 id="card-explore-title" class="card-title">Explore My World</h3>
-            <p class="card-desc">
-              A window into the many worlds I inhabit — technology, music, dance,
-              philosophy, community, nature, and more. This is the personal side.
-            </p>
-            <div class="coming-soon-badge">Coming Soon</div>
-            <a href="explore.html" class="btn btn-outline card-cta">Peek Inside</a>
+            <h3 class="card-title">Explore My World</h3>
+            <a href="explore.html" class="btn btn-outline card-cta">Enter</a>
           </article>
 
         </div>
