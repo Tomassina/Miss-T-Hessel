@@ -36,9 +36,9 @@
   --radius-lg:  24px;
   --radius-full: 9999px;
 
-  --shadow-sm:  0 2px  8px  rgba(92, 24, 72, 0.08);
-  --shadow-md:  0 8px  32px rgba(92, 24, 72, 0.12);
-  --shadow-lg:  0 16px 56px rgba(92, 24, 72, 0.18);
+  --shadow-sm:  0 2px  8px  rgba(127, 5, 95, 0.06);
+  --shadow-md:  0 8px  32px rgba(127, 5, 95, 0.09);
+  --shadow-lg:  0 16px 56px rgba(127, 5, 95, 0.13);
 
   --transition:     0.3s ease;
   --container-max:  1200px;
@@ -67,11 +67,10 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 75% 55% at 18% 28%, rgba(228, 208, 148, 0.22) 0%, transparent 70%),
-    radial-gradient(ellipse 55% 45% at 82% 72%, rgba(215, 193, 135, 0.18) 0%, transparent 65%),
-    radial-gradient(ellipse 85% 38% at 58% 8%,  rgba(255, 251, 232, 0.55) 0%, transparent 58%),
-    radial-gradient(ellipse 40% 50% at 92% 38%, rgba(235, 218, 162, 0.16) 0%, transparent 60%),
-    linear-gradient(170deg, #FDFBF6 0%, #F6EFE0 45%, #EDE3C8 100%);
+    radial-gradient(ellipse 80% 60% at 22% 32%, rgba(220, 198, 145, 0.09) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 78% 20%, rgba(235, 220, 172, 0.10) 0%, transparent 62%),
+    radial-gradient(ellipse 65% 45% at 60% 84%, rgba(210, 188, 135, 0.07) 0%, transparent 65%),
+    linear-gradient(170deg, #FEFDF9 0%, #FAF6EE 55%, #F3EBD8 100%);
   z-index: -1;
 }
 
