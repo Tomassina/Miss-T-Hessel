@@ -161,15 +161,11 @@ p { max-width: 65ch; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--header-height);
-  background: rgba(255, 253, 248, 0.55);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  transition: background var(--transition), box-shadow var(--transition);
+  background: transparent;
 }
 
 .site-header.is-scrolled {
-  background: rgba(255, 253, 248, 0.82);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
 }
 
 .header-inner {
@@ -564,10 +560,7 @@ p { max-width: 65ch; }
    Footer
    ============================================================ */
 .site-footer {
-  background: rgba(255, 253, 248, 0.55);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(196, 151, 58, 0.3);
+  background: transparent;
   color: var(--text-body);
   padding: var(--space-xl) 0 var(--space-md);
   margin-top: var(--space-xl);
@@ -579,7 +572,6 @@ p { max-width: 65ch; }
   gap: var(--space-lg);
   align-items: start;
   padding-bottom: var(--space-lg);
-  border-bottom: 1px solid rgba(196, 151, 58, 0.2);
 }
 
 .footer-name {
